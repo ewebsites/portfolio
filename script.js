@@ -1,4 +1,4 @@
-/*window.alert("Welcome to my website! Feel free to explore!")*/
+window.alert("Welcome to my website! Feel free to explore!")
 function myFunction() {
         var words = document.getElementById("grouppic");
         if (words.src.match("gwc22.jpg")) {
@@ -31,4 +31,16 @@ function normalImg(x) {
 
 function moreText() {
 	var text = document.getElementById("aboutmetxt");
+	document.getElementById("aboutmetxt").style.fontFamily =  "Verdana, Geneva, sans-serif";
+	text.innerHTML = "Outside of coding, I love volunteering and I'm very passionate about girls' rights around the world.\
+		             I also love to write and I'm an editor for my school's newspaper."
 }
+
+function showHex(){
+			var hex =  document.querySelector("#color_hex_value"),
+			    head = document.getElementsByClassName("head");
+			for(var i = 0; i < head.length; i++)
+			{
+   				(head.item(i)).style.color = document.querySelector("#color_picker").value;
+			}
+		}
