@@ -17,58 +17,67 @@
 		</ul>
 		
 		<div id= "home" style = "padding:20px;">
-			<h2>Hi, I'm Eshani</h2>
+			<h2 class= "head">Hi, I'm Eshani</h2>
 			<p> Here, you can learn about my interests, see my projects, check out my experience with Girls Who Code and contact me!</p>
 		</div>
 		
+		CHOOSE A COLOR TO COLOR ALL THE HEADLINES <input id="color_picker" type="color" onchange="showHex();"> <span id="color_hex_value"></span>
+		
+		
+    	<div class="container">
+			<div class="planet"></div>
+			<div class="rocket"></div>
+		</div>
     	
 		<div id = "gwc" style = "padding:20px">
-			<h2> Girls Who Code </h2>
+			<h2 class = "head"> Girls Who Code </h2>
 			<p> For the summer of 2016, I'm part of the Girls Who Code Summer Immersion Program at Intuit,
 			 where I get to work with 20 girls who all share a passion for coding and using code to change the world.</p>
-			 <p> Here is the group of girls who worked with me this summer <small>(click a picture to see more pics)</small>:</p>
+			 <p> Here is the group of girls who worked with me this summer <small>(click a picture to see more)</small>:</p>
 			 <img src = "gwc11.jpg" alt="group picture" id = "groupformal" onclick = "myFunc()">
 			 <img src = "gwc22.jpg" alt="group picture" id="grouppic" onclick="myFunction()">
 		</div>
 		
 		<div id = "projects" style = "padding:20px;">
-			<h2>Projects</h2>
+			<h2 class="head">Projects</h2>
 			<p>I've made many things in just 4 weeks. You can run the attached files to see how they work.</p>
 			<ul>
 				<li class = "p"> I made a <a href = "https://scratch.mit.edu/projects/114605703/" target = "_blank">dice game</a> that can be played with either one or two players.</li>
-				<img src = "piggame.png">
+				<img src = "piggame.png" alt = "dice game">
 				<li class = "p"> I also made a <a href = "https://scratch.mit.edu/projects/116316032/" target="_blank">jukebox</a> that allows you to play different songs in any order you choose.</li>
-				<img src = "jukebox.png">
+				<img src = "jukebox.png" alt = "jukebox">
 				<li class = "p"> Here's a <a href = "runner_game_me.py" target = "_blank">game</a> I made, where the player moves through a city while trying to collect coins and avoid the skulls: </li>
-				<img src= "cityscroll.png" style = "width:602px;height:395px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src= "cityscroll.png" alt = "city scrolling game" style = "width:602px;height:395px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
 				<li class = "p">I also made a <a href= obamicon.py target = "_blank">program</a> that converts any picture into one that looks like this:</li>
-				<img src = "leslie.jpg" style = "width:278px;height:324px;margin-right:20px">
-				<img src = "arrow.jpg" style = "width:156px; height:156px">
-				<img src = "lesliecon.jpg" style = "width:278px;height:324px;">
+				<img src = "leslie.jpg" alt = "normal leslie knope" style = "width:278px;height:324px;margin-right:20px">
+				<img src = "arrow.jpg" alt = "arrow" style = "width:156px; height:156px">
+				<img src = "lesliecon.jpg" alt = "red, white and blue leslie" style = "width:278px;height:324px;">
 				<li class = "p">I also created a <a href = "snowanimation.py" target = "_blank">program</a> that makes it snow on any image:</li>
-				<img src = "snowpic.png" style = "width:651px;height:400px;">
+				<img src = "snowpic.png" alt = "snow falling on mountains" style = "width:651px;height:400px;">
 			</ul>
 		</div>
 		
 		<div id= "aboutme" style = "padding:20px;">
-			<h2> About Me</h2>
-			<div id = "aboutmetxt">
+			<h2 class="head"> About Me</h2>
+			<div>
 			<p> I'm Eshani Mehta. I'm part of the 2016 Girls Who Code Summer Immersion Program at Intuit Bay Area. </p>
-			<p> I go to Lynbrook High School in San Jose, where I am involved in several clubs and organizations. </p>
 			<p>Although I've only recently started coding, I enjoy writing code and being able to create new things.</p>
-			<p>Outside of coding, I love volunteering and I'm very passionate about children's rights, especially young girl's rights around the world.</p>
-			 <p>I also love to write and I'm an editor for my school's <a href= "https://issuu.com/theepic" target = "_blank">newspaper</a>.</p>
+			<p id = "aboutmetxt" onclick = "moreText()">Click here to learn more about my other interests.</p>
 			</div>
 		</div>
 		
 		<div id = "contact" style = "padding:20px;">
-			<h2>Contact Me</h2>
+			<h2 class="head">Contact Me</h2>
 			<p>You can contact me by: <br>
 				Email: <a href="mailto:eshani.mehta@gmail.com?">eshani.mehta@gmail.com</a><br>
 				<a href="https://www.facebook.com/eshani.mehta.9" target="_blank">Facebook</a>
 			</p>
+			<button type="button" class="button" onclick="document.getElementById('demo').innerHTML = Date()">
+			Get Date and Time</button>
+			<p id="demo"></p>
 		</div>
-		
-		<img src = "thanksg.gif" class = "center">
+
+		<img src = "thanksg.gif" alt= "little bean saying thanks" class = "center">
+
 	</body>
 </html>
